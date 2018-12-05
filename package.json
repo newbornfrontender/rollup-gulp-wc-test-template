@@ -1,0 +1,39 @@
+{
+  "name": "rollup-gulp-wc-test-template",
+  "version": "1.0.0",
+  "description": "Тестовый шаблон для веб-компонентов с Gulp и Rollup",
+  "main": "index.js",
+  "repository": "https://github.com/newbornfrontender/rollup-gulp-wc-test-template.git",
+  "author": "Infant Frontender <newbornfrontender@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "clean": "gulp clean",
+    "format": "prettier --write **/*.{html,css,js,json,md}",
+    "start": "gulp start",
+    "build": "cross-env NODE_ENV=production gulp build"
+  },
+  "dependencies": {
+    "@vaadin/router": "^1.2.0",
+    "@webcomponents/webcomponentsjs": "^2.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/register": "^7.0.0",
+    "cross-env": "^5.2.0",
+    "cssnano": "^4.1.7",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "postcss": "^7.0.6",
+    "postcss-load-config": "^2.0.0",
+    "postcss-preset-env": "^6.4.0",
+    "prettier": "^1.15.2",
+    "rollup": "^0.67.3",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "terser": "^3.10.12",
+    "through2": "^3.0.0"
+  }
+}
