@@ -1,0 +1,4 @@
+/lib
+/previous-builds
+
+/public/*.{css,js}

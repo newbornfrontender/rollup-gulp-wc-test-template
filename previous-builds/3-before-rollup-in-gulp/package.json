@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "clean": "gulp clean",
+    "prettify": "prettier --write **/*.{html,js,json,md}",
+    "start:compile": "babel components -d lib -w",
+    "start:bundle": "rollup -c -w",
+    "build": "yarn clean && babel components -d lib && rollup -c && gulp uglify"
+  },
+  "dependencies": {
+    "@vaadin/router": "^1.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/register": "^7.0.0",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "prettier": "^1.15.2",
+    "rollup": "^0.67.3",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "terser": "^3.10.12",
+    "through2": "^3.0.0"
+  }
+}
